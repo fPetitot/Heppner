@@ -1,0 +1,20 @@
+Nom et numéro de la version : 
+Heppner_v0
+
+Client :
+- Groupe Heppner - Branche Transport Terrestre
+Développée par : 
+- InfoTek - Groupe H
+- PETITOT Florian / GABORIEAU Thibaut
+
+Informations de configuration :
+- Serveurs SQL et HTTP configurés
+
+Nouvelles fonctionnalités de la version :
+-Aucune
+
+Correction de bug de la version précédente :
+- Correction des bugs du frame work poru afficher le site 
+
+Commentaires :
+- Phase de code pas encore entamé.
