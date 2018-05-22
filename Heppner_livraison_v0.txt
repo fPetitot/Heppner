@@ -8,7 +8,7 @@ Développée par :
 - PETITOT Florian / GABORIEAU Thibaut
 
 Informations de configuration :
-- Serveurs SQL et HTTP configurés
+-
 
 Nouvelles fonctionnalités de la version :
 -Aucune
