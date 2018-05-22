@@ -19,6 +19,4 @@ class TrajetModel extends Object
     public $conducteur_id;
     public $dateDepart;
     public $dateArrivee;
-
-
 }
