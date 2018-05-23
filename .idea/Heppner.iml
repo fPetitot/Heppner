@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Cas Heppner-v0/App/M" isTestSource="false" packagePrefix="App\M\" />
+      <sourceFolder url="file://$MODULE_DIR$/Cas Heppner-v0/App/C" isTestSource="false" packagePrefix="App\C\" />
+      <sourceFolder url="file://$MODULE_DIR$/Cas Heppner-v0/Core" isTestSource="false" packagePrefix="Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/Cas Heppner-v0/App/V" isTestSource="false" packagePrefix="App\V\" />
+      <excludeFolder url="file://$MODULE_DIR$/Cas Heppner-v0/vendor/composer" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

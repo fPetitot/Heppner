@@ -11,7 +11,7 @@ use Core\Object;
 
 class DevisModel extends Object
 {
-    protected static $_table='devis';
+    protected static $_table = 'devis';
 
     public $id;
     public $demandeTransport_id;
