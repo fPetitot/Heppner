@@ -36,7 +36,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-address-book"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\TrajetModel::count(); ?> conducteurs</div>
+                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs.</div>
             </div>
         </div>
     </div>
@@ -60,21 +60,21 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-book"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\DemandeTransportModel::count()-\App\M\DevisModel::count(); ?> devis à réaliser</div>
+                <div class="mr-5"><?php echo \App\M\DevisModel::devisARealiser(); ?> devis à réaliser</div>
             </div>
         </div>
     </div>
 
-        <div class="col-xl-3 col-sm-6 mb-3">
-            <div class="card text-white bg-primary o-hidden h-100">
-                <div class="card-body">
-                    <div class="card-body-icon">
-                        <i class="fa fa-fw fa-forward"></i>
-                    </div>
-                    <div class="mr-5"><?php echo \App\M\TrajetModel::getConducteursEnDeplacement(); ?> conducteurs en déplacement</div>
+    <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+                <div class="card-body-icon">
+                    <i class="fa fa-fw fa-forward"></i>
                 </div>
+                <div class="mr-5"><?php echo \App\M\TrajetModel::getEnDeplacement(); ?> conducteurs en déplacement</div>
             </div>
         </div>
+    </div>
 
     <div class="col-xl-3 col-sm-6 mb-3">
         <div class="card text-white bg-primary o-hidden h-100">
@@ -82,7 +82,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-building"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\DevisModel::getCAJour(); ?> € de chiffre d'affaire</div>
+                <div class="mr-5"><?php echo \App\M\ConducteurModel::count() - \App\M\TrajetModel::getEnDeplacement(); ?> conducteurs sans affectation</div>
             </div>
         </div>
     </div>
