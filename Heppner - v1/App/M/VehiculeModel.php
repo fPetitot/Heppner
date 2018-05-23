@@ -20,6 +20,7 @@ class VehiculeModel extends Object
     public $coutAchat;
     public $modele_id;
 
+
     public function getPoids(){
         return $this->modele->poidsVide;
     }
