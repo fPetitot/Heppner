@@ -10,6 +10,8 @@ namespace App\C;
 
 use App\V\DashBoard\ListeView;
 
+use App\M\TrajetModel;
+
 
 /**
  * Description of DashBoardController

@@ -19,4 +19,9 @@ class TrajetModel extends Object
     public $conducteur_id;
     public $dateDepart;
     public $dateArrivee;
+
+    public static function getConducteursEnDeplacement(){
+        return self::count(["dateArrivee = NULL"]);
+    }
+    
 }

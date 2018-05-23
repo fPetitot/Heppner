@@ -19,4 +19,6 @@ class ConducteurModel extends Object
     public $dateEmbauche;
     public $dateNaissance;
     public $dateSortie;
+
+
 }

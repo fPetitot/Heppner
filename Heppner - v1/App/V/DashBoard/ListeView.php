@@ -36,6 +36,8 @@ class  ListeView extends \Core\View {
         return count(RegionModel::getAll());
     }
 
+
+
     public function getNbAll($annee)
     {
         return 0;
