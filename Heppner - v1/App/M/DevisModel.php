@@ -19,4 +19,8 @@ class DevisModel extends Object
     public $dateEnvoi;
     public $dateArriveePrevue;
     public $valide;
+
+    public static function devisARealiser(){
+        return self::count(["valide"=>0]);
+    }
 }

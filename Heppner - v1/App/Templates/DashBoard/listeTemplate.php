@@ -36,7 +36,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\TrajetModel::count(); ?> conducteurs</div>
+                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs</div>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\DemandeTransportModel::count()-\App\M\DevisModel::count(); ?> devis à réaliser</div>
+                <div class="mr-5"><?php echo \App\M\DevisModel::devisARealiser(); ?> devis à réaliser</div>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\TrajetModel::getConducteursEnDeplacement(); ?> conducteurs en déplacement</div>
+                <div class="mr-5"><?php echo \App\M\TrajetModel::count(["dateArrivee" => "NULL"]); ?> conducteurs en déplacement</div>
             </div>
         </div>
     </div>

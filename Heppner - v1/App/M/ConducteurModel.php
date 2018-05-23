@@ -20,5 +20,7 @@ class ConducteurModel extends Object
     public $dateNaissance;
     public $dateSortie;
 
+    public static function getConducteursValide(){
 
+    }
 }
