@@ -36,7 +36,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\TrajetModel::count(["conducteur_id!=NULL"]); ?> conducteurs</div>
+                <div class="mr-5"><?php echo \App\M\TrajetModel::count(); ?> conducteurs</div>
             </div>
         </div>
     </div>
