@@ -36,7 +36,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-address-book"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs</div>
+                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs.</div>
             </div>
         </div>
     </div>
