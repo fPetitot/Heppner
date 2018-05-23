@@ -19,11 +19,11 @@ class DevisModel extends Object
     public $dateEnvoi;
     public $dateArriveePrevue;
     public $valide;
-    public $dateJour=\DateTime::ATOM;
 
-    /**
-     * @return mixed
-     */
+    public static function devisARealiser(){
+        return self::count(["valide"=>0]);
+    }
+
     public static function getCAJour()
     {
         $listeDevis=DevisModel::getAll();
