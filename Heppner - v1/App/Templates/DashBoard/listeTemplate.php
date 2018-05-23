@@ -52,13 +52,24 @@
         </div>
     </div>
 
+        <div class="col-xl-3 col-sm-6 mb-3">
+            <div class="card text-white bg-primary o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon">
+                        <i class="fa fa-fw fa-forward"></i>
+                    </div>
+                    <div class="mr-5"><?php echo \App\M\TrajetModel::getConducteursEnDeplacement(); ?> conducteurs en déplacement</div>
+                </div>
+            </div>
+        </div>
+
     <div class="col-xl-3 col-sm-6 mb-3">
         <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\TrajetModel::getConducteursEnDeplacement(); ?> conducteurs en déplacement</div>
+                <div class="mr-5"><?php echo \App\M\DevisModel::getCAJour(); ?> € de chiffre d'affaire</div>
             </div>
         </div>
     </div>
