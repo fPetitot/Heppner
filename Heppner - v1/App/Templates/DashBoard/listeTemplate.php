@@ -47,7 +47,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\DemandeTransportModel::count()-\App\M\DevisModel::count(); ?> devis. à réaliser</div>
+                <div class="mr-5"><?php echo \App\M\DemandeTransportModel::count()-\App\M\DevisModel::count(); ?> devis à réaliser</div>
             </div>
         </div>
     </div>
