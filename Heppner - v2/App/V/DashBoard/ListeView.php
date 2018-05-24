@@ -4,6 +4,7 @@ namespace App\V\DashBoard;
 
 use App\M\ConducteurModel;
 use App\M\DepartementModel;
+use App\M\DevisModel;
 use App\M\RegionModel;
 
 class  ListeView extends \Core\View {
@@ -36,9 +37,7 @@ class  ListeView extends \Core\View {
     {
         return count(RegionModel::getAll());
     }
-
-
-
+    
     public function getNbAll($annee)
     {
         return 0;
@@ -46,6 +45,11 @@ class  ListeView extends \Core\View {
 
     public function getTableauConducteursSansAffectation(){
         return ConducteurModel::getAll();
+    }
+
+    public function getCA(){
+
+        return \App\M\DevisModel::getCAJour();
     }
 
 }

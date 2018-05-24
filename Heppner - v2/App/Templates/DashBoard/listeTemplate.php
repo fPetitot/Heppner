@@ -93,7 +93,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\DevisModel::getCAJour(); ?> € de chiffre d'affaire</div>
+                <div class="mr-5"><?php echo $this->getCA(); ?> € de chiffre d'affaire aujourd'hui</div>
             </div>
         </div>
     </div>
