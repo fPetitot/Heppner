@@ -11,5 +11,5 @@ class Config{
 
     // For Application settings
     const APPLI_NAME    = 'Heppner';
-    const APPLI_VERSION = 'v1';
+    const APPLI_VERSION = 'v2';
 }

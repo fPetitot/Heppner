@@ -25,7 +25,10 @@ class TrajetModel extends Object
     }
 */
 
-
+    /**
+     * Retourne les conducteurs en déplacement donc ceux qui ont pour date d'arrivée NULL puisqu'ils ne sont pas encore arrivés à destination
+     * @return int
+     */
     public static function getEnDeplacement(){
         $somme=0;
         $deplacements=self::getAll();
@@ -34,10 +37,10 @@ class TrajetModel extends Object
             if (is_null($deplacement->getDateArrivee())){
                 $somme++;
             }
-
         }
         return $somme;
     }
+
 
     /**
      * @return mixed
