@@ -102,7 +102,7 @@
         <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-forward"></i>
+                    <i class="fa fa-fw fa-credit-card"></i>
                 </div>
                 <div class="mr-5"><?php echo $this->getCAM(); ?> € de chiffre d'affaire du mois</div>
             </div>
@@ -113,7 +113,7 @@
         <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-forward"></i>
+                    <i class="fa fa-fw fa-money"></i>
                 </div>
                 <div class="mr-5"><?php echo $this->getCAJ(); ?> € de chiffre d'affaire aujourd'hui</div>
             </div>
