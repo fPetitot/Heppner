@@ -27,4 +27,26 @@ class VehiculeModel extends Object
     public function getTrajets(){
         return TrajetModel::find(['vehicule_id'=>$this->id]);
     }
-}
+
+
+    public static function getNbVehiculesParCategorie()
+    {
+        $return = [];
+        $categories = CategorieModel::getAll();
+        foreach ($categories as $categorie) {
+            $valeur = [];
+            $valeur['categorie']=$categorie;
+            $valeur['nbVehicules'] = $categorie->nbVehicules();
+            $return[]=$valeur;
+        }
+        return $return;
+
+    }
+
+    public static function getNbVehiculesParCategorieSQL()
+    {
+        return self::query('select c.*,count(*) as nb from modele m,vehicule v, categorie c where v.modele_id=m.idand c.id=m.categorie_idgroup by m.categorie_id ', []);
+    }
+
+
+    }

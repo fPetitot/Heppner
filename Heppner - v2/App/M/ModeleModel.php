@@ -22,4 +22,10 @@ class ModeleModel extends Object
     public $marque_id;
     public $volume;
     public $categorie_id;
+
+    public function getNbVehicules()
+    {
+        //select count(*) from vehicule where modele_id=?
+        return VehiculeModel::count(['modele_id'=>$this->id]);
+    }
 }
