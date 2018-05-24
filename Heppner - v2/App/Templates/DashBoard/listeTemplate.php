@@ -36,7 +36,18 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-address-book"></i>
                 </div>
-                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs.</div>
+                <div class="mr-5"><?php echo \App\M\ConducteurModel::count(); ?> conducteurs</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+                <div class="card-body-icon">
+                    <i class="fa fa-fw fa-address-book"></i>
+                </div>
+                <div class="mr-5"><?php echo \App\M\DevisModel::count(); ?> devis</div>
             </div>
         </div>
     </div>
@@ -46,7 +57,7 @@
 
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
-            <a href="#"> sépaTestration</a>
+            <a href="#"> En cours</a>
         </li>
     </ol>
 
@@ -93,7 +104,7 @@
                 <div class="card-body-icon">
                     <i class="fa fa-fw fa-forward"></i>
                 </div>
-                <div class="mr-5"><?php echo $this->getCAJ(); ?> € de chiffre d'affaire aujourd'hui</div>
+                <div class="mr-5"><?php echo $this->getCA(); ?> € de chiffre d'affaire aujourd'hui</div>
             </div>
         </div>
     </div>
@@ -102,12 +113,13 @@
         <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
                 <div class="card-body-icon">
-                    <i class="fa fa-fw fa-forward"></i>
+                    <i class="fa fa-fw fa-road"></i>
                 </div>
-                <div class="mr-5"><?php echo $this->getCAM(); ?> € de chiffre d'affaire de ce mois-ci</div>
+                <div class="mr-5">Le plus long trajet est de : <?php echo \App\M\DemandeTransportModel::getTrajetLePlusLong() ; ?> KMs</div>
             </div>
         </div>
     </div>
+
 </div>
 
 <ol class="breadcrumb">
@@ -118,7 +130,6 @@
 
 
 
-<div class="row">
 
 <?php
 
@@ -148,4 +159,7 @@ echo '      </tbody>
             </div>
             </div>
      </div>';
+?>
+
+
 
