@@ -47,9 +47,13 @@ class  ListeView extends \Core\View {
         return ConducteurModel::getAll();
     }
 
-    public function getCA(){
+    public function getCAJ(){
 
         return \App\M\DevisModel::getCAJour();
     }
 
+    public function getCAM(){
+
+        return \App\M\DevisModel::getCAMois();
+    }
 }

@@ -51,7 +51,28 @@ class DevisModel extends Object
             }
         }
         return $CAJour;
+    }
 
+    public static function getCAMois()
+    {
+        $listeDevis=DevisModel::getAll();
+
+
+        // $listeDevis[5] : accès à la 5 eme ligne (tuple) de la liste qui est un objet de type DevisModel, mais en objet on dit qui est un élémenent de la liste qui est un objet instance de la classe DevisModel donc
+        // $listeDevis[5]->getDateEnvoie() pour récupere la date d'envoie du 5 eme élément de la liste (sous entendu la ci,nqiuieme ligne de la table Devis)
+        $CAMois=0;
+        $dateJour=new DateTime("NOW");
+
+
+
+        // Pour chaque element de la $listeDevis, je le nomme $unDevis puis je travaille avec dans la boucle :
+        foreach ($listeDevis as $unDevis){
+            $dateAujourdhui = new DateTime($unDevis->getDateEnvoi());
+            if($dateJour->format('m')==$dateAujourdhui->format('m')){
+                $CAMois+=$unDevis->getMontant();
+            }
+        }
+        return $CAMois;
     }
 
     /**
