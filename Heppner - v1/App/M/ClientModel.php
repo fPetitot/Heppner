@@ -15,4 +15,6 @@ class ClientModel extends Object
 
     public $id;
     public $raisonSociale;
+
+
 }

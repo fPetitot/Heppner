@@ -23,4 +23,31 @@ class DevisModel extends Object
     public static function devisARealiser(){
         return self::count(["valide"=>0]);
     }
+
+    public static function getCAJour()
+    {
+        $listeDevis=DevisModel::getAll();
+        $CAJour=0;
+
+        foreach ($listeDevis as $unDevis){
+            $CAJour+=$unDevis->getMontant();
+        }
+        return $CAJour;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDateJour()
+    {
+        return $this->dateJour;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMontant()
+    {
+        return $this->montant;
+    }
 }

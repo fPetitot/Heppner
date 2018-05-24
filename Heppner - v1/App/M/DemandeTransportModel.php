@@ -25,5 +25,4 @@ class DemandeTransportModel extends Object
     public $dateDemande;
     public $dateLimite;
 
-
 }
