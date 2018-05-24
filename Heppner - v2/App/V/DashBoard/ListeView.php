@@ -6,6 +6,8 @@ use App\M\ConducteurModel;
 use App\M\DepartementModel;
 use App\M\DevisModel;
 use App\M\RegionModel;
+use App\M\VehiculeModel;
+use App\M\ModeleModel;
 
 class  ListeView extends \Core\View {
     /**
@@ -56,4 +58,12 @@ class  ListeView extends \Core\View {
 
         return \App\M\DevisModel::getCAMois();
     }
+
+    public function getNbVehicule ()
+    {
+        $tableau =VehiculeModel::getNbVehiculesParCategorie();
+        return $tableau;
+    }
+
+
 }

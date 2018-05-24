@@ -139,6 +139,30 @@
     </li>
 </ol>
 
+<div class="row">
+
+<div class="col-xl-12 col-sm-6 mb-3">
+    <div class="card-header">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class ="table table-bordered" id ="dataTable" width="100%" cellspacing="0">
+            </div>
+            <div class="mr-5">Nombre véhicules par catégories :
+                <?php
+                foreach ($this->getNbVehicule() as $unElement){
+                    echo '<tr>';
+                    echo '<td>' .$unElement['categorie']->getLibelle().'</td>';
+                    echo '<td>'.$unElement['nbVehicules'].'</td>';
+                    echo '</tr>';
+                    }
+                    ?>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -172,5 +196,5 @@ echo '      </tbody>
      </div>';
 ?>
 
-
+</div>;
 
